@@ -38,7 +38,7 @@ const videogamesImages = ['TM04-001.png', 'TM04-002.png', 'TM04-003.png', 'TM04-
 })
     */
 
-const databaseURL = 'https://memory-game-941be-default-rtdb.firebaseio.com/.json';
+const databaseURL = 'https://funkomemorygame-default-rtdb.firebaseio.com/.json';
 
 app.post('/score', (request, response) => {
 	let body = [];
