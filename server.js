@@ -12,11 +12,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.raw());
 
-app.use('/images/heroes', express.static('heroes'));
-app.use('/images/movies', express.static('movies'));
-app.use('/images/musicians', express.static('musicians'));
-app.use('/images/videogames', express.static('videogames'));
-
 
 const heroes = 'HEROES';
 const movies = 'MOVIES';
@@ -39,7 +34,11 @@ const moviesImages = ['TM02-001.png', 'TM02-002.png', 'TM02-003.png', 'TM02-004.
 const musiciansImages = ['TM03-001.png', 'TM03-002.png', 'TM03-003.png', 'TM03-004.png', 'TM03-005.png', 'TM03-006.png', 'TM03-007.png', 'TM03-008.png', 'TM03-009.png', 'TM03-010.png', 'TM03-011.png', 'TM03-012.png', 'TM03-013.png', 'TM03-014.png', 'TM03-015.png', 'TM03-016.png', 'TM03-017.png', 'TM03-018.png', 'TM03-019.png', 'TM03-020.png', 'TM03-021.png', 'TM03-022.png', 'TM03-023.png', 'TM03-024.png', 'TM03-025.png', 'TM03-026.png', 'TM03-027.png', 'TM03-028.png', 'TM03-029.png', 'TM03-030.png'];
 const videogamesImages = ['TM04-001.png', 'TM04-002.png', 'TM04-003.png', 'TM04-004.png', 'TM04-005.png', 'TM04-006.png', 'TM04-007.png', 'TM04-008.png', 'TM04-009.png', 'TM04-010.png', 'TM04-011.png', 'TM04-012.png', 'TM04-013.png', 'TM04-014.png', 'TM04-015.png', 'TM04-016.png', 'TM04-017.png', 'TM04-018.png', 'TM04-019.png', 'TM04-020.png', 'TM04-021.png', 'TM04-022.png', 'TM04-023.png', 'TM04-024.png', 'TM04-025.png', 'TM04-026.png', 'TM04-027.png', 'TM04-028.png', 'TM04-029.png', 'TM04-030.png', 'TM04-031.png', 'TM04-032.png', 'TM04-033.png', 'TM04-034.png', 'TM04-035.png', 'TM04-036.png'];
 
-
+/*app.get('/scores', (request, response) => {
+    const url = 'https://memory-game-941be-default-rtdb.firebaseio.com/.json';
+    response.send(JSON.stringify(scoresData));
+})
+    */
 
 const databaseURL = 'https://funkomemorygame-default-rtdb.firebaseio.com/.json';
 
